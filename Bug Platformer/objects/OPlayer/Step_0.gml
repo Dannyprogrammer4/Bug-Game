@@ -11,20 +11,12 @@ if yspd >= 0 && place_meeting(x, y + 2, OGround) {
 	setOnGround(true);
 }
 	
-if (!onGround && !place_meeting(x + xspd, y, OGround)) {
-	if (moveDir == -1) {
-		//sprite_index = SPlayerJumpLeft;
-	} else {
-		//sprite_index = SPLayerJump;
-	}
-} else if (moveDir != 0) {
+
+if (moveDir == 1) {
 	sprite_index = SPlayer;
-	if (moveDir == -1) {
+	 
+} else if (moveDir == -1) {
 		sprite_index = SPlayerLeft;
-	}
-	
-} else {
-	sprite_index = SPlayer;
 }
 	
 //Get xspd
