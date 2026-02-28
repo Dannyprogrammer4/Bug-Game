@@ -2,6 +2,7 @@
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"background","order":18,"path":"objects/background/background.yy",},
+    {"name":"OCheckpoint","order":23,"path":"objects/OCheckpoint/OCheckpoint.yy",},
     {"name":"ODragonFly","order":17,"path":"objects/ODragonFly/ODragonFly.yy",},
     {"name":"OEnemy","order":12,"path":"objects/OEnemy/OEnemy.yy",},
     {"name":"OGround","order":3,"path":"objects/OGround/OGround.yy",},

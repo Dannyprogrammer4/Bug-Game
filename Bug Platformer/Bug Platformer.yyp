@@ -20,6 +20,7 @@
   "name":"Bug Platformer",
   "resources":[
     {"id":{"name":"background","path":"objects/background/background.yy",},},
+    {"id":{"name":"OCheckpoint","path":"objects/OCheckpoint/OCheckpoint.yy",},},
     {"id":{"name":"ODragonFly","path":"objects/ODragonFly/ODragonFly.yy",},},
     {"id":{"name":"OEnemy","path":"objects/OEnemy/OEnemy.yy",},},
     {"id":{"name":"OGround","path":"objects/OGround/OGround.yy",},},
