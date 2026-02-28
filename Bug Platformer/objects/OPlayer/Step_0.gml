@@ -7,11 +7,11 @@ getControls();
 //Direction
 moveDir = rightKey - leftKey;
 
-if yspd >= 0 && place_meeting(x, y + 2, OGround1) {
+if yspd >= 0 && place_meeting(x, y + 2, OGround) {
 	setOnGround(true);
 }
 	
-if (!onGround && !place_meeting(x + xspd, y, OGround1)) {
+if (!onGround && !place_meeting(x + xspd, y, OGround)) {
 	if (moveDir == -1) {
 		sprite_index = SPlayerJumpLeft;
 	} else {
@@ -32,10 +32,10 @@ xspd = moveDir * moveSpd;
 
 //Xcollisions
 var _subPixel = 0.025;
-if place_meeting(x + xspd, y, OGround1) {
+if place_meeting(x + xspd, y, OGround) {
 	
 	var _pixelCheck = _subPixel * sign(xspd);
-	while !place_meeting(x + _pixelCheck, y, OGround1) {
+	while !place_meeting(x + _pixelCheck, y, OGround) {
 		x += _pixelCheck;
 	}
 	xspd = 0;
@@ -89,7 +89,7 @@ if jumpHoldTimer > 0 {
 
 _subPixel = 0.5;
 
-if place_meeting( x, y + yspd, OGround1 ) {
+if place_meeting( x, y + yspd, OGround ) {
 	
 	var _pixelCheck = _subPixel * sign(yspd);
 	while !place_meeting(x, y + _pixelCheck, OGround1) {
