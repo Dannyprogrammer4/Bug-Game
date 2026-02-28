@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"OCheckpoint",
+  "%Name":"OHealth",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"OPlayer","path":"objects/OPlayer/OPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"OCheckpoint",
+  "name":"OHealth",
   "overriddenProperties":[],
   "parent":{
     "name":"Bug Platformer",
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SCheckpoint",
-    "path":"sprites/SCheckpoint/SCheckpoint.yy",
+    "name":"SHealth",
+    "path":"sprites/SHealth/SHealth.yy",
   },
   "spriteMaskId":null,
   "visible":true,

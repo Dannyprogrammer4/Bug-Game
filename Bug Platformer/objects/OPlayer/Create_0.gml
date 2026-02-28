@@ -40,3 +40,5 @@ coyoteHangFrames = 4;
 coyoteJumpFrames = 5;
 coyoteJumpTimer = 0;
 global.PlayerX = x;
+global.Lives = 3;
+invincibleTimer = 0;

@@ -91,4 +91,27 @@ if place_meeting( x, y + yspd, OGround ) {
 	yspd = 0;
 }
 
+
 y += yspd;
+
+
+// Damage check
+if (invincibleTimer <= 0 && (place_meeting(x, y, OEnemy) || place_meeting(x, y, ODragonFly))) {
+    
+    global.Lives -= 1;
+    invincibleTimer = 60; // 1 second of invincibility
+    
+    if (global.Lives <= 0) {
+        instance_destroy();
+    }
+}
+
+// Countdown timer
+if (invincibleTimer > 0) {
+	xspd = -4 * sign(other.x - x);
+	yspd = -3;
+	image_alpha = 0.5;
+    invincibleTimer--;
+} else {
+	image_alpha = 1;
+}
