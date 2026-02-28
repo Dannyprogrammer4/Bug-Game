@@ -13,14 +13,14 @@ if yspd >= 0 && place_meeting(x, y + 2, OGround) {
 	
 if (!onGround && !place_meeting(x + xspd, y, OGround)) {
 	if (moveDir == -1) {
-		sprite_index = SPlayerJumpLeft;
+		//sprite_index = SPlayerJumpLeft;
 	} else {
-		sprite_index = SPLayerJump;
+		//sprite_index = SPLayerJump;
 	}
 } else if (moveDir != 0) {
-	sprite_index = SPlayerRun;
+	//sprite_index = SPlayerRun;
 	if (moveDir == -1) {
-		sprite_index = SPlayerRunLeft;
+		//sprite_index = SPlayerRunLeft;
 	}
 	
 } else {

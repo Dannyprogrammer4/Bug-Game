@@ -25,7 +25,7 @@
     {"id":{"name":"GeneralFunctions","path":"scripts/GeneralFunctions/GeneralFunctions.yy",},},
     {"id":{"name":"sbackground","path":"sprites/sbackground/sbackground.yy",},},
     {"id":{"name":"SGround","path":"sprites/SGround/SGround.yy",},},
-    {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
+    {"id":{"name":"SPlayer","path":"sprites/SPlayer/SPlayer.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
