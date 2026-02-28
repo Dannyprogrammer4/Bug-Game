@@ -14,7 +14,7 @@ if (abs(x - CurrentX) <= 150 && DifferenceBetweenPlayerandEnemy(global.PlayerX, 
 		
 		if (DifferenceBetweenPlayerandEnemy(global.PlayerX, x) <= 20) {
 			moveDir = 0;
-			sprite_index = SMaggotEnemyAttackRight;
+			sprite_index = SMaggotEnemyAttack_1;
 			
 			
 		} else {

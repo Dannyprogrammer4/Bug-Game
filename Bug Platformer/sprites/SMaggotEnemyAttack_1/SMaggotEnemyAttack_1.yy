@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"SMaggotEnemyAttackRight",
+  "%Name":"SMaggotEnemyAttack_1",
   "bboxMode":2,
   "bbox_bottom":12,
   "bbox_left":0,
@@ -27,7 +27,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"cb1918ed-bc08-40f9-bf87-51025dbc0c36","blendMode":0,"displayName":"default","isLocked":false,"name":"cb1918ed-bc08-40f9-bf87-51025dbc0c36","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"SMaggotEnemyAttackRight",
+  "name":"SMaggotEnemyAttack_1",
   "nineSlice":null,
   "origin":7,
   "parent":{
@@ -39,7 +39,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"SMaggotEnemyAttackRight",
+    "%Name":"SMaggotEnemyAttack_1",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -63,7 +63,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"SMaggotEnemyAttackRight",
+    "name":"SMaggotEnemyAttack_1",
     "playback":1,
     "playbackSpeed":10.0,
     "playbackSpeedType":0,
@@ -75,25 +75,25 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0c4e0d1d-59bd-47fd-8e23-77b32b46d4bd","path":"sprites/SMaggotEnemyAttackRight/SMaggotEnemyAttackRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0c4e0d1d-59bd-47fd-8e23-77b32b46d4bd","path":"sprites/SMaggotEnemyAttack_1/SMaggotEnemyAttack_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"5de13fdf-c307-4caa-8955-7e9d6f1c0669","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"62c25132-1e3b-4d18-aed3-49173f557e1c","path":"sprites/SMaggotEnemyAttackRight/SMaggotEnemyAttackRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"62c25132-1e3b-4d18-aed3-49173f557e1c","path":"sprites/SMaggotEnemyAttack_1/SMaggotEnemyAttack_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"66c57c9a-bd56-4a96-8012-3310f9e1dd92","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0b1950aa-a009-473e-8173-31c79c7e44f7","path":"sprites/SMaggotEnemyAttackRight/SMaggotEnemyAttackRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0b1950aa-a009-473e-8173-31c79c7e44f7","path":"sprites/SMaggotEnemyAttack_1/SMaggotEnemyAttack_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"b108501b-9f94-4cd1-b7ee-68dece771446","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"449f41f4-d250-4c47-a4f0-0dea8592b210","path":"sprites/SMaggotEnemyAttackRight/SMaggotEnemyAttackRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"449f41f4-d250-4c47-a4f0-0dea8592b210","path":"sprites/SMaggotEnemyAttack_1/SMaggotEnemyAttack_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"61a1235d-beb6-4865-8d06-9357dba2db7e","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5c7e8fbf-ccec-4843-ba39-20656dfd2bab","path":"sprites/SMaggotEnemyAttackRight/SMaggotEnemyAttackRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5c7e8fbf-ccec-4843-ba39-20656dfd2bab","path":"sprites/SMaggotEnemyAttack_1/SMaggotEnemyAttack_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"8d241f96-5e78-444b-b3b7-c0c15c2499ad","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0feb7755-8921-49b7-b961-56234b0a713f","path":"sprites/SMaggotEnemyAttackRight/SMaggotEnemyAttackRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0feb7755-8921-49b7-b961-56234b0a713f","path":"sprites/SMaggotEnemyAttack_1/SMaggotEnemyAttack_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c766c19a-4e41-445e-8a19-45604e2708b6","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"aac322e0-c80e-4d12-819c-dfe6749e3fcc","path":"sprites/SMaggotEnemyAttackRight/SMaggotEnemyAttackRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"aac322e0-c80e-4d12-819c-dfe6749e3fcc","path":"sprites/SMaggotEnemyAttack_1/SMaggotEnemyAttack_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"b8bbeba4-6d44-472e-ba84-43c4e3b91212","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
