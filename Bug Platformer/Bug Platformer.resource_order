@@ -3,7 +3,9 @@
   "ResourceOrderSettings":[
     {"name":"OGround","order":3,"path":"objects/OGround/OGround.yy",},
     {"name":"OPlayer","order":1,"path":"objects/OPlayer/OPlayer.yy",},
+    {"name":"GeneralFunctions","order":5,"path":"scripts/GeneralFunctions/GeneralFunctions.yy",},
     {"name":"sbackground","order":4,"path":"sprites/sbackground/sbackground.yy",},
     {"name":"SGround","order":2,"path":"sprites/SGround/SGround.yy",},
+    {"name":"Sprite3","order":6,"path":"sprites/Sprite3/Sprite3.yy",},
   ],
 }
