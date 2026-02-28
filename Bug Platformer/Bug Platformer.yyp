@@ -28,6 +28,7 @@
     {"id":{"name":"bg1","path":"rooms/bg1/bg1.yy",},},
     {"id":{"name":"GeneralFunctions","path":"scripts/GeneralFunctions/GeneralFunctions.yy",},},
     {"id":{"name":"Sbackground","path":"sprites/Sbackground/Sbackground.yy",},},
+    {"id":{"name":"SCheckpoint","path":"sprites/SCheckpoint/SCheckpoint.yy",},},
     {"id":{"name":"SDragonFly_1","path":"sprites/SDragonFly_1/SDragonFly_1.yy",},},
     {"id":{"name":"SDragonFly","path":"sprites/SDragonFly/SDragonFly.yy",},},
     {"id":{"name":"SGround","path":"sprites/SGround/SGround.yy",},},
