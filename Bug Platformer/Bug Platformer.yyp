@@ -26,6 +26,7 @@
     {"id":{"name":"sbackground","path":"sprites/sbackground/sbackground.yy",},},
     {"id":{"name":"SGround","path":"sprites/SGround/SGround.yy",},},
     {"id":{"name":"SPlayer","path":"sprites/SPlayer/SPlayer.yy",},},
+    {"id":{"name":"SPlayerMove","path":"sprites/SPlayerMove/SPlayerMove.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
