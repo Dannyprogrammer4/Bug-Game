@@ -1,3 +1,5 @@
+onGround = true;
+
 function setOnGround(_val = true) {
 	if _val == true {
 		onGround = true;

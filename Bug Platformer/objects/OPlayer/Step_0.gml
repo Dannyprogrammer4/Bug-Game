@@ -92,7 +92,7 @@ _subPixel = 0.5;
 if place_meeting( x, y + yspd, OGround ) {
 	
 	var _pixelCheck = _subPixel * sign(yspd);
-	while !place_meeting(x, y + _pixelCheck, OGround1) {
+	while !place_meeting(x, y + _pixelCheck, OGround) {
 		y += _pixelCheck;
 		
 	}
