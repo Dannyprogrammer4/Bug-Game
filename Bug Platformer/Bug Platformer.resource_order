@@ -1,6 +1,8 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
+    {"name":"OGround","order":3,"path":"objects/OGround/OGround.yy",},
     {"name":"OPlayer","order":1,"path":"objects/OPlayer/OPlayer.yy",},
+    {"name":"SGround","order":2,"path":"sprites/SGround/SGround.yy",},
   ],
 }
