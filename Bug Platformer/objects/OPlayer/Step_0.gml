@@ -18,7 +18,7 @@ if (!onGround && !place_meeting(x + xspd, y, OGround)) {
 		//sprite_index = SPLayerJump;
 	}
 } else if (moveDir != 0) {
-	sprite_index = SPlayerMove;
+	sprite_index = SPlayer;
 	if (moveDir == -1) {
 		//sprite_index = SPlayerRunLeft;
 	}

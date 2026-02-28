@@ -6,7 +6,6 @@
     {"name":"GeneralFunctions","order":5,"path":"scripts/GeneralFunctions/GeneralFunctions.yy",},
     {"name":"sbackground","order":4,"path":"sprites/sbackground/sbackground.yy",},
     {"name":"SGround","order":2,"path":"sprites/SGround/SGround.yy",},
-    {"name":"SPlayer","order":6,"path":"sprites/SPlayer/SPlayer.yy",},
-    {"name":"SPlayerMove","order":7,"path":"sprites/SPlayerMove/SPlayerMove.yy",},
+    {"name":"SPlayer","order":7,"path":"sprites/SPlayer/SPlayer.yy",},
   ],
 }
