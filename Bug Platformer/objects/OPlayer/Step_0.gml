@@ -20,7 +20,7 @@ if (!onGround && !place_meeting(x + xspd, y, OGround)) {
 } else if (moveDir != 0) {
 	sprite_index = SPlayer;
 	if (moveDir == -1) {
-		//sprite_index = SPlayerRunLeft;
+		sprite_index = SPlayerLeft;
 	}
 	
 } else {
