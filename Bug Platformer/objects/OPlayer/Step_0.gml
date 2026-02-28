@@ -1,5 +1,20 @@
+if (isDead) {
 
+    // Apply gravity while dead
+    deathFallSpeed += 0.4;
+    y += deathFallSpeed;
 
+    // Optional fade out
+    image_alpha -= 0.02;
+
+    // When off screen → respawn
+    if (y > room_height + 20) {
+		alarm[0] = room_speed * 1;
+        exit;
+    }
+
+    exit;
+}
 //Get inputs
 
 getControls();
@@ -96,22 +111,27 @@ y += yspd;
 
 
 // Damage check
-if (invincibleTimer <= 0 && (place_meeting(x, y, OEnemy) || place_meeting(x, y, ODragonFly))) {
+if (!isDead && invincibleTimer <= 0 &&
+    (place_meeting(x, y, OEnemy) || place_meeting(x, y, ODragonFly))) {
     
     global.Lives -= 1;
-    invincibleTimer = 60; // 1 second of invincibility
-    
+    invincibleTimer = 60;
+
     if (global.Lives <= 0) {
-        instance_destroy();
+        isDead = true;
+         deathFallSpeed = -6;  // little pop upward before fall
     }
 }
 
 // Countdown timer
 if (invincibleTimer > 0) {
+	if (!isDead) {
+		
 	xspd = -4 * sign(other.x - x);
 	yspd = -3;
 	image_alpha = 0.5;
     invincibleTimer--;
+	}
 } else {
 	image_alpha = 1;
 }

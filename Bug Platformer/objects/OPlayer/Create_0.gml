@@ -42,3 +42,6 @@ coyoteJumpTimer = 0;
 global.PlayerX = x;
 global.Lives = 3;
 invincibleTimer = 0;
+waitTimer = 5;
+isDead = false;
+deathFallSpeed = 0;

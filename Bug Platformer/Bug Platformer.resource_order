@@ -12,6 +12,7 @@
     {"name":"GeneralFunctions","order":5,"path":"scripts/GeneralFunctions/GeneralFunctions.yy",},
     {"name":"Sbackground","order":19,"path":"sprites/Sbackground/Sbackground.yy",},
     {"name":"SCheckpoint","order":22,"path":"sprites/SCheckpoint/SCheckpoint.yy",},
+    {"name":"SCheckpointActive","order":29,"path":"sprites/SCheckpointActive/SCheckpointActive.yy",},
     {"name":"SDragonFly_1","order":16,"path":"sprites/SDragonFly_1/SDragonFly_1.yy",},
     {"name":"SDragonFly","order":15,"path":"sprites/SDragonFly/SDragonFly.yy",},
     {"name":"SGround","order":2,"path":"sprites/SGround/SGround.yy",},
