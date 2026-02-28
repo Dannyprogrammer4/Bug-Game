@@ -19,6 +19,7 @@
   },
   "name":"Bug Platformer",
   "resources":[
+    {"id":{"name":"OPlayer","path":"objects/OPlayer/OPlayer.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "resourceType":"GMProject",
