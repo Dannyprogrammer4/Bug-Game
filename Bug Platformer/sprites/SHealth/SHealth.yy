@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"SHealth",
   "bboxMode":0,
-  "bbox_bottom":22,
+  "bbox_bottom":47,
   "bbox_left":0,
-  "bbox_right":94,
+  "bbox_right":199,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":23,
+  "height":48,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"f7dc9cad-2c8c-4c3a-9e99-fa90008bac8e","blendMode":0,"displayName":"default","isLocked":false,"name":"f7dc9cad-2c8c-4c3a-9e99-fa90008bac8e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":95,
+  "width":200,
 }

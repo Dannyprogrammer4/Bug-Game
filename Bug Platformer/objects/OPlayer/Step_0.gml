@@ -8,9 +8,11 @@ if (isDead) {
     image_alpha -= 0.02;
 
     // When off screen → respawn
-    if (y > room_height + 20) {
-		alarm[0] = room_speed * 1;
+    if (y > room_height + 150) {
+		alarm[0] = room_speed * 0.5;
+		isDead = false;
         exit;
+		
     }
 
     exit;
@@ -26,13 +28,25 @@ if yspd >= 0 && place_meeting(x, y + 2, OGround) {
 	setOnGround(true);
 }
 	
-
-if (moveDir == 1) {
-	sprite_index = SPlayer;
+if (attack) {
+	if (sprite_index == SPlayerLeft) {
+		sprite_index = SAttackPlayerLeft;
+	
 	 
-} else if (moveDir == -1) {
-		sprite_index = SPlayerLeft;
+	} else if (sprite_index == SPlayer) {
+		sprite_index = SAttackPlayer;
+		
+	}
+	attack = 0;
+} else {
+	if (moveDir == 1) {
+		sprite_index = SPlayer;
+	 
+	} else if (moveDir == -1) {
+			sprite_index = SPlayerLeft;
+	}
 }
+
 	
 //Get xspd
 xspd = moveDir * moveSpd;
@@ -111,7 +125,9 @@ y += yspd;
 
 
 // Damage check
-if (!isDead && invincibleTimer <= 0 &&
+if ((sprite_index = SAttackPlayerLeft || sprite_index = SAttackPlayer) && (place_meeting(x, y, OEnemy) || place_meeting(x, y, ODragonFly))) {
+	global.DamageAnimation = true;
+} else if (!isDead && invincibleTimer <= 0 &&
     (place_meeting(x, y, OEnemy) || place_meeting(x, y, ODragonFly))) {
     
     global.Lives -= 1;
@@ -125,13 +141,12 @@ if (!isDead && invincibleTimer <= 0 &&
 
 // Countdown timer
 if (invincibleTimer > 0) {
-	if (!isDead) {
-		
+	
 	xspd = -4 * sign(other.x - x);
-	yspd = -3;
+	yspd = -2.5;
 	image_alpha = 0.5;
     invincibleTimer--;
-	}
+	
 } else {
 	image_alpha = 1;
 }

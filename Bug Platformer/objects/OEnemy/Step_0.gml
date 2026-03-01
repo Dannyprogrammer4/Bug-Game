@@ -1,47 +1,79 @@
-if (abs(x - CurrentX) < 90 && DifferenceBetweenPlayerandEnemy(global.PlayerX, x) < 60 && DifferenceBetweenPlayerandEnemy(global.PlayerX, x) > -60)  {
-	
-	if (DifferenceBetweenPlayerandEnemy(global.PlayerX, x) < 0) {
-		sprite_index = SMaggotEnemyLeft;
-		
-		if (DifferenceBetweenPlayerandEnemy(global.PlayerX, x) >= -20) {
-			moveDir = 0;
-			sprite_index = SMaggotEnemyAttack;
-			
-		} else {
-			moveDir = -1;
-		}
-		
-	} else if (DifferenceBetweenPlayerandEnemy(global.PlayerX, x) > 0) {
-		sprite_index = SMaggotEnemy;
-		
-		if (DifferenceBetweenPlayerandEnemy(global.PlayerX, x) <= 20) {
-			moveDir = 0;
-			sprite_index = SMaggotEnemyAttack_1;
-			
-			
-		} else {
-			moveDir = 1;
-		}
-		
-	}
-	
-	
-	
-} else if (abs(x - CurrentX) > 95)  {
-	
+var dist = global.PlayerX - x;
+var absDist = abs(dist);
 
+// DEAD
+if (global.DamageAnimation && place_meeting(x, y, OPlayer)) {
+    deathFallSpeed += 0.2;
+    y += deathFallSpeed;
+    image_alpha -= 0.05;
 
-
-if (x - CurrentX < -150 || x - CurrentX > 150 ) {
-		if (moveDir == -1) {
-			moveDir = 1;
-			sprite_index = SMaggotEnemy;
-		} else {
-			moveDir = -1
-			sprite_index = SMaggotEnemyLeft;
-		}
+    if (y > room_height + 150) {
+        instance_destroy();
+    }
+    exit; // stop further logic
 }
+
+// ------------------
+// STATE MACHINE
+// ------------------
+
+switch (state) {
+
+    case "idle":
+
+        moveSpd = 2;
+
+        // Enter chase only if clearly close
+        if (absDist < 60) {
+            state = "chase";
+        }
+
+        break;
+
+
+    case "chase":
+
+        moveSpd = 4;
+
+        // Leave chase only if clearly far
+        if (absDist > 80) {
+            state = "idle";
+            break;
+        }
+
+        if (absDist <= 20) {
+            state = "attack";
+            break;
+        }
+
+        moveDir = sign(dist);
+
+        if (moveDir < 0) {
+            sprite_index = SMaggotEnemyLeft;
+        } else {
+            sprite_index = SMaggotEnemy;
+        }
+
+        break;
+
+
+    case "attack":
+
+        moveDir = 0;
+
+        if (absDist > 25) {
+            state = "chase";
+            break;
+        }
+
+        if (dist < 0) {
+            sprite_index = SMaggotEnemyAttack;
+        } else {
+            sprite_index = SMaggotEnemyAttack_1;
+        }
+
+        break;
 }
-xspd = moveDir * moveSpd;
-x += xspd;
-	
+
+// Apply movement
+x += moveDir * moveSpd;

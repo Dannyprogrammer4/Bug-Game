@@ -21,7 +21,10 @@ function getControls() {
 		rightKey = clamp(rightKey, 0, 1);
 	leftKey = keyboard_check(ord("A"));
 		leftKey = clamp(leftKey, 0, 1);
-	
+	attack = keyboard_check_pressed(ord("E"));
+		attack = clamp(attack, 0, 1);
+		
+		
 	jumpKey = keyboard_check( vk_space);
 		jumpKey = clamp(jumpKey, 0, 1);
 	

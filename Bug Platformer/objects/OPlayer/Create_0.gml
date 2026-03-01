@@ -45,3 +45,4 @@ invincibleTimer = 0;
 waitTimer = 5;
 isDead = false;
 deathFallSpeed = 0;
+global.DamageAnimation = false;
